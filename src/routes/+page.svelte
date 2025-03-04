@@ -1,3 +1,7 @@
+<script>
+	import Project from '../components/project.svelte';
+</script>
+
 <div class="h-16">
 	<div class="flex place-content-between p-6">
 		<div>
@@ -36,7 +40,23 @@
 	</div>
 </div>
 
-<div class="h-dvh border">projects</div>
+<div class="min-h-dvh">
+	<div class="flex flex-col items-center justify-center gap-3 py-3">
+		<span class="text-4xl font-semibold">Projects</span>
+		<div class="text-2xl">
+			<span>Quality</span>
+			<span class="font-light">in code, </span>
+			<span>excellence </span>
+			<span class="font-light">in delivery.</span>
+		</div>
+	</div>
+	<div class="mx-6 flex flex-col items-center gap-3">
+		<Project />
+		<Project />
+		<Project />
+		<Project />
+	</div>
+</div>
 
 <div class="h-dvh border">about me</div>
 

@@ -1,5 +1,6 @@
 <script>
 	import Skill from './skill.svelte';
+	let { answer } = $props();
 </script>
 
 <div class="flex rounded-lg border">
@@ -14,7 +15,7 @@
 		<div>
 			<span class="text-xl font-bold">My First Project</span>
 			<ul role="list" class="marker:--color-text ml-6 list-disc">
-				<li>first item</li>
+				<li>{answer}</li>
 				<li>second item</li>
 				<li>third item</li>
 			</ul>

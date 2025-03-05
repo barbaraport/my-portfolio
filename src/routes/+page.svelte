@@ -1,5 +1,16 @@
 <script>
+	import { FileGatewayFactory } from '../apis/factories/FileGatewayFactory';
 	import Project from '../components/project.svelte';
+
+	let data = $state({});
+
+	const gateway = FileGatewayFactory.create();
+
+	$effect(() => {
+		gateway.fetch().then((data) => {
+			data = data;
+		});
+	});
 </script>
 
 <div class="h-16">
@@ -51,10 +62,10 @@
 		</div>
 	</div>
 	<div class="mx-6 flex flex-col items-center gap-3">
-		<Project />
-		<Project />
-		<Project />
-		<Project />
+		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
+		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
+		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
+		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
 	</div>
 </div>
 

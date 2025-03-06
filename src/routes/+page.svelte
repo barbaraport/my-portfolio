@@ -1,14 +1,15 @@
 <script>
-	import { FileGatewayFactory } from '../apis/factories/FileGatewayFactory';
+	import { FileGateway } from '../apis/gateways/FileGateway';
+	import { DataService } from '../apis/services/DataService';
 	import Project from '../components/project.svelte';
 
 	let data = $state({});
 
-	const gateway = FileGatewayFactory.create();
+	const service = new DataService(new FileGateway());
 
 	$effect(() => {
-		gateway.fetch().then((data) => {
-			data = data;
+		service.get().then((newData) => {
+			data = newData;
 		});
 	});
 </script>

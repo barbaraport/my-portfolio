@@ -7,6 +7,9 @@ export interface PortfolioData {
 interface Project {
     name: string;
     description: string;
-    image: string;
+    image: {
+        url: string;
+        alt: string;
+    };
     skills: Skill[];
 }

@@ -1,38 +1,24 @@
-<script>
+<script lang="ts">
+	import type { ProjectProps } from './dtos/ProjectProps';
 	import Skill from './skill.svelte';
-	let { answer } = $props();
+	let { name, description, image, skills }: ProjectProps = $props();
 </script>
 
-<div class="flex rounded-lg border">
+<div class="flex w-full rounded-lg border">
 	<div class="w-1/2">
-		<img
-			src="/src/assets/bg.jpg"
-			alt="project's splashscreen"
-			class="rounded-tl-lg rounded-bl-lg"
-		/>
+		<img src={image?.url} alt={image?.alt} class="w-full rounded-tl-lg rounded-bl-lg" />
 	</div>
 	<div class="m-6 flex w-1/2 flex-col justify-between">
 		<div>
-			<span class="text-xl font-bold">My First Project</span>
+			<span class="text-xl font-bold">{name}</span>
 			<ul role="list" class="marker:--color-text ml-6 list-disc">
-				<li>{answer}</li>
-				<li>second item</li>
-				<li>third item</li>
+				<li>{description}</li>
 			</ul>
 		</div>
 		<div class="flex flex-wrap gap-3">
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
-			<Skill />
+			{#each skills as skill}
+				<Skill name={skill?.name} />
+			{/each}
 		</div>
 	</div>
 </div>

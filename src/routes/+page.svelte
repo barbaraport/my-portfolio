@@ -30,7 +30,7 @@
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="flex h-1/2 flex-col items-center justify-end gap-2.5">
 			<span class="text-xl"
-				>Looking for an expert software developer? Let’s work together to find your solution.</span
+				>Looking for an expert software developer? Let's work together to find your solution.</span
 			>
 			<span class="text-5xl font-medium">Building the future, one line of code at a time.</span>
 			<span class="text-sm"
@@ -64,10 +64,14 @@
 		</div>
 	</div>
 	<div class="mx-6 flex flex-col items-center gap-3">
-		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
-		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
-		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
-		<Project answer={'asdlfjsdkjdsjkfdhsdfh'} />
+		{#each data?.projects as project}
+			<Project
+				name={project?.name}
+				description={project?.description}
+				image={project?.image}
+				skills={project?.skills}
+			/>
+		{/each}
 	</div>
 </div>
 

@@ -3,7 +3,10 @@
         {
             "name": "Project 1",
             "description": "Description 1",
-            "image": "image1.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 1"
+            },
             "skills": [
                 {"name": "JavaScript"},
                 {"name": "HTML"},
@@ -13,7 +16,10 @@
         {
             "name": "Project 2",
             "description": "Description 2",
-            "image": "image2.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 2"
+            },
             "skills": [
                 {"name": "TypeScript"},
                 {"name": "HTML"},
@@ -23,7 +29,10 @@
         {
             "name": "Project 3",
             "description": "Description 3",
-            "image": "image3.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 3"
+            },
             "skills": [
                 {"name": "JavaScript"},
                 {"name": "HTML"},
@@ -33,7 +42,10 @@
         {
             "name": "Project 4",
             "description": "Description 4",
-            "image": "image4.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 4"
+            },
             "skills": [
                 {"name": "Python"},
                 {"name": "Django"},
@@ -43,7 +55,10 @@
         {
             "name": "Project 5",
             "description": "Description 5",
-            "image": "image5.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 5"
+            },
             "skills": [
                 {"name": "Java"},
                 {"name": "Spring Boot"},
@@ -53,11 +68,19 @@
         {
             "name": "Project 6",
             "description": "Description 6",
-            "image": "image6.jpg",
+            "image": {
+                "url": "https://fakeimg.pl/350x200",
+                "alt": "Image 6"
+            },
             "skills": [
                 {"name": "React"},
                 {"name": "Node.js"},
-                {"name": "MongoDB"}
+                {"name": "MongoDB"},
+                {"name": "NestJS"},
+                {"name": "HTML"},
+                {"name": "CSS"},
+                {"name": "TypeScript"},
+                {"name": "JavaScript"}
             ]
         }
     ]

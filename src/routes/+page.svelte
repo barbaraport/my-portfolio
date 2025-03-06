@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
+	import type { PortfolioData } from '../apis/dtos/PortfolioDataDTO';
 	import { FileGateway } from '../apis/gateways/FileGateway';
 	import { DataService } from '../apis/services/DataService';
 	import Project from '../components/project.svelte';
 
-	let data = $state({});
+	let data: PortfolioData = $state({ projects: [] });
 
 	const service = new DataService(new FileGateway());
 

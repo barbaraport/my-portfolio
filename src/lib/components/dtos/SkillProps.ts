@@ -1,3 +1,3 @@
 export interface SkillProps {
-    name: string;
+	name: string;
 }

@@ -1,87 +1,67 @@
 {
-    "projects": [
-        {
-            "name": "Project 1",
-            "description": "Description 1",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 1"
-            },
-            "skills": [
-                {"name": "JavaScript"},
-                {"name": "HTML"},
-                {"name": "Bootstrap"}
-            ]
-        },
-        {
-            "name": "Project 2",
-            "description": "Description 2",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 2"
-            },
-            "skills": [
-                {"name": "TypeScript"},
-                {"name": "HTML"},
-                {"name": "Tailwind CSS"}
-            ]
-        },
-        {
-            "name": "Project 3",
-            "description": "Description 3",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 3"
-            },
-            "skills": [
-                {"name": "JavaScript"},
-                {"name": "HTML"},
-                {"name": "CSS"}
-            ]
-        },
-        {
-            "name": "Project 4",
-            "description": "Description 4",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 4"
-            },
-            "skills": [
-                {"name": "Python"},
-                {"name": "Django"},
-                {"name": "PostgreSQL"}
-            ]
-        },
-        {
-            "name": "Project 5",
-            "description": "Description 5",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 5"
-            },
-            "skills": [
-                {"name": "Java"},
-                {"name": "Spring Boot"},
-                {"name": "MySQL"}
-            ]
-        },
-        {
-            "name": "Project 6",
-            "description": "Description 6",
-            "image": {
-                "url": "https://fakeimg.pl/350x200",
-                "alt": "Image 6"
-            },
-            "skills": [
-                {"name": "React"},
-                {"name": "Node.js"},
-                {"name": "MongoDB"},
-                {"name": "NestJS"},
-                {"name": "HTML"},
-                {"name": "CSS"},
-                {"name": "TypeScript"},
-                {"name": "JavaScript"}
-            ]
-        }
-    ]
+	"projects": [
+		{
+			"name": "Project 1",
+			"description": "Description 1",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 1"
+			},
+			"skills": [{ "name": "JavaScript" }, { "name": "HTML" }, { "name": "Bootstrap" }]
+		},
+		{
+			"name": "Project 2",
+			"description": "Description 2",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 2"
+			},
+			"skills": [{ "name": "TypeScript" }, { "name": "HTML" }, { "name": "Tailwind CSS" }]
+		},
+		{
+			"name": "Project 3",
+			"description": "Description 3",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 3"
+			},
+			"skills": [{ "name": "JavaScript" }, { "name": "HTML" }, { "name": "CSS" }]
+		},
+		{
+			"name": "Project 4",
+			"description": "Description 4",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 4"
+			},
+			"skills": [{ "name": "Python" }, { "name": "Django" }, { "name": "PostgreSQL" }]
+		},
+		{
+			"name": "Project 5",
+			"description": "Description 5",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 5"
+			},
+			"skills": [{ "name": "Java" }, { "name": "Spring Boot" }, { "name": "MySQL" }]
+		},
+		{
+			"name": "Project 6",
+			"description": "Description 6",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 6"
+			},
+			"skills": [
+				{ "name": "React" },
+				{ "name": "Node.js" },
+				{ "name": "MongoDB" },
+				{ "name": "NestJS" },
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "TypeScript" },
+				{ "name": "JavaScript" }
+			]
+		}
+	]
 }

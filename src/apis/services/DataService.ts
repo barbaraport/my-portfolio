@@ -1,13 +1,13 @@
-import type { Gateway } from "../gateways/gateway";
+import type { Gateway } from '../gateways/gateway';
 
 export class DataService {
-    private readonly gateway: Gateway;
+	private readonly gateway: Gateway;
 
-    constructor(gateway: Gateway) { 
-        this.gateway = gateway;
-    }
+	constructor(gateway: Gateway) {
+		this.gateway = gateway;
+	}
 
-    async get() {
-        return await this.gateway.fetch();
-    }
+	async get() {
+		return await this.gateway.fetch();
+	}
 }

@@ -1,15 +1,15 @@
-import type { Skill } from "./SkillDTO";
+import type { Skill } from './SkillDTO';
 
 export interface PortfolioData {
-    projects: Project[];
+	projects: Project[];
 }
 
 interface Project {
-    name: string;
-    description: string;
-    image: {
-        url: string;
-        alt: string;
-    };
-    skills: Skill[];
+	name: string;
+	description: string;
+	image: {
+		url: string;
+		alt: string;
+	};
+	skills: Skill[];
 }

@@ -1,18 +1,8 @@
 <script lang="ts">
-	import type { PortfolioData } from '../apis/dtos/PortfolioDataDTO';
-	import { FileGateway } from '../apis/gateways/FileGateway';
-	import { DataService } from '../apis/services/DataService';
-	import Project from '../components/project.svelte';
+	import Project from '$lib/components/project.svelte';
+	import type { PageProps } from './$types';
 
-	let data: PortfolioData = $state({ projects: [] });
-
-	const service = new DataService(new FileGateway());
-
-	$effect(() => {
-		service.get().then((newData) => {
-			data = newData;
-		});
-	});
+	let { data }: PageProps = $props();
 </script>
 
 <div class="h-16">

@@ -66,7 +66,16 @@
 					"Conducted research on software development best practices."
 				]
 			}
-		]
+		],
+		"social": {
+			"linkedin": "https://linkedin.com/in/barbaraport",
+			"github": "https://github.com/barbaraport",
+			"youtube": "https://www.youtube.com/"
+		},
+		"photo": {
+			"url": "https://fakeimg.pl/350x200",
+			"alt": "Barbara's profile picture. The picture has a black background. She is a woman with a black t-shirt, that has curly and short hair. Also, she uses glasses."
+		}
 	},
 	"projects": [
 		{

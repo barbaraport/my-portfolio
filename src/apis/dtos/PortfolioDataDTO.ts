@@ -12,6 +12,8 @@ interface Info {
 	skills: Skill[];
 	work: Experience[];
 	education: Experience[];
+	social: Social;
+	photo: Image;
 }
 
 interface Experience {
@@ -22,12 +24,20 @@ interface Experience {
 	description: string[];
 }
 
+interface Social {
+	linkedin: string;
+	github: string;
+	youtube: string;
+}
+
 interface Project {
 	name: string;
 	description: string;
-	image: {
-		url: string;
-		alt: string;
-	};
+	image: Image;
 	skills: Skill[];
+}
+
+interface Image {
+	url: string;
+	alt: string;
 }

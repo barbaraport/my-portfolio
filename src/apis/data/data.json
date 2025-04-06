@@ -1,66 +1,192 @@
 {
+	"info": {
+		"name": "Bárbara Port",
+		"role": "Full Stack Developer",
+		"description": [
+			"I have 3 years of professional experience.",
+			"I have been studying software development for 8 years."
+		],
+		"skills": [
+			{ "name": "React" },
+			{ "name": "HTML" },
+			{ "name": "TypeScript" },
+			{ "name": "JavaScript" },
+			{ "name": "Tailwind CSS" },
+			{ "name": "CSS" },
+			{ "name": "Java" },
+			{ "name": "Spring Boot" },
+			{ "name": "NestJS" },
+			{ "name": "Prisma ORM" },
+			{ "name": "PostgreSQL" },
+			{ "name": "MySQL" },
+			{ "name": "Git" }
+		],
+		"work": [
+			{
+				"name": "Full Stack Developer",
+				"place": "Company ABC",
+				"startDate": "2022-01-01",
+				"endDate": "2023-12-31",
+				"description": [
+					"Developed and maintained web applications using React, TypeScript, and Java.",
+					"Collaborated with cross-functional teams to design and implement new features.",
+					"Participated in code reviews and provided constructive feedback to team members."
+				]
+			},
+			{
+				"name": "Full Stack Developer",
+				"place": "Company ABC",
+				"startDate": "2024-01-01",
+				"endDate": "2025-06-30",
+				"description": [
+					"Developed and maintained web applications using React, TypeScript, and Java.",
+					"Collaborated with cross-functional teams to design and implement new features.",
+					"Participated in code reviews and provided constructive feedback to team members."
+				]
+			}
+		],
+		"education": [
+			{
+				"name": "Bachelor's Degree in Computer Science",
+				"place": "University XYZ",
+				"startDate": "2018-01-01",
+				"endDate": "2022-12-31",
+				"description": [
+					"Studied computer science principles, algorithms, and data structures.",
+					"Completed coursework in software development, web technologies, and database management."
+				]
+			},
+			{
+				"name": "Master's Degree in Software Engineering",
+				"place": "University ABC",
+				"startDate": "2023-01-01",
+				"endDate": "2025-12-31",
+				"description": [
+					"Studied advanced software engineering concepts and methodologies.",
+					"Conducted research on software development best practices."
+				]
+			}
+		]
+	},
 	"projects": [
 		{
-			"name": "Project 1",
-			"description": "Description 1",
+			"name": "ehSoja",
+			"description": "Android mobile app for image recognition through artificial intelligence.",
 			"image": {
 				"url": "https://fakeimg.pl/350x200",
 				"alt": "Image 1"
 			},
-			"skills": [{ "name": "JavaScript" }, { "name": "HTML" }, { "name": "Bootstrap" }]
+			"skills": [
+				{ "name": "React Native" },
+				{ "name": "TypeScript" },
+				{ "name": "Styled Components" },
+				{ "name": "Python" },
+				{ "name": "Flask" },
+				{ "name": "Node.js" },
+				{ "name": "NestJS" },
+				{ "name": "Prisma ORM" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Firebase" },
+				{ "name": "TensorFlow" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
 		},
 		{
-			"name": "Project 2",
-			"description": "Description 2",
+			"name": "FolConn",
+			"description": "Android mobile app that centralizes vehicle manuals and notifies users of their necessary adjustments, and a Web Application to manage the registered users",
 			"image": {
 				"url": "https://fakeimg.pl/350x200",
-				"alt": "Image 2"
-			},
-			"skills": [{ "name": "TypeScript" }, { "name": "HTML" }, { "name": "Tailwind CSS" }]
-		},
-		{
-			"name": "Project 3",
-			"description": "Description 3",
-			"image": {
-				"url": "https://fakeimg.pl/350x200",
-				"alt": "Image 3"
-			},
-			"skills": [{ "name": "JavaScript" }, { "name": "HTML" }, { "name": "CSS" }]
-		},
-		{
-			"name": "Project 4",
-			"description": "Description 4",
-			"image": {
-				"url": "https://fakeimg.pl/350x200",
-				"alt": "Image 4"
-			},
-			"skills": [{ "name": "Python" }, { "name": "Django" }, { "name": "PostgreSQL" }]
-		},
-		{
-			"name": "Project 5",
-			"description": "Description 5",
-			"image": {
-				"url": "https://fakeimg.pl/350x200",
-				"alt": "Image 5"
-			},
-			"skills": [{ "name": "Java" }, { "name": "Spring Boot" }, { "name": "MySQL" }]
-		},
-		{
-			"name": "Project 6",
-			"description": "Description 6",
-			"image": {
-				"url": "https://fakeimg.pl/350x200",
-				"alt": "Image 6"
+				"alt": "Image 1"
 			},
 			"skills": [
+				{ "name": "React Native" },
+				{ "name": "TypeScript" },
 				{ "name": "React" },
-				{ "name": "Node.js" },
-				{ "name": "MongoDB" },
-				{ "name": "NestJS" },
+				{ "name": "TypeScript" },
 				{ "name": "HTML" },
 				{ "name": "CSS" },
-				{ "name": "TypeScript" },
-				{ "name": "JavaScript" }
+				{ "name": "Python" },
+				{ "name": "Flask" },
+				{ "name": "MongoDB" },
+				{ "name": "REST APIs" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "AirplaneDocGenerator",
+			"description": "A desktop application to automate the generation of user manuals for products.",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Electron.js" },
+				{ "name": "React" },
+				{ "name": "JavaScript" },
+				{ "name": "Node.js" },
+				{ "name": "HTML" },
+				{ "name": "Tailwind CSS" },
+				{ "name": "CSS" },
+				{ "name": "Java" },
+				{ "name": "Spring Boot" },
+				{ "name": "REST APIs" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "SkillShare",
+			"description": "An Learning Management System (LMS), as a web application.",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Thymeleaf" },
+				{ "name": "Java" },
+				{ "name": "Spring Boot" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "RoadTracker",
+			"description": "A desktop application to manage working hours.",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Java" },
+				{ "name": "JavaFX" },
+				{ "name": "Hibernate" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "TempVerify",
+			"description": "Android mobile app for room temperature and humidity monitoring.",
+			"image": {
+				"url": "https://fakeimg.pl/350x200",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Flutter" },
+				{ "name": "Dart" },
+				{ "name": "OneSignal" },
+				{ "name": "Firebase" },
+				{ "name": "NodeMCU" },
+				{ "name": "C" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
 			]
 		}
 	]

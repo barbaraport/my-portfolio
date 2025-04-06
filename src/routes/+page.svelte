@@ -9,7 +9,7 @@
 <div class="h-16">
 	<div class="flex place-content-between p-6">
 		<div>
-			<span>Bárbara Port</span>
+			<span>{data.info.name}</span>
 		</div>
 		<div class="flex gap-7">
 			<a href="/projects">Projects</a>
@@ -73,7 +73,7 @@
 				<span class="text-4xl font-semibold">About me</span>
 				<div class="text-2xl">
 					<span>Nice to meet you. I'm </span>
-					<span class="font-bold">Bárbara Port</span><span>.</span>
+					<span class="font-bold">{data.info.name}</span><span>.</span>
 				</div>
 			</div>
 			<div class="flex w-full content-between gap-3">
@@ -89,43 +89,40 @@
 				<div class="w-full">
 					<div class="mb-4"><span class="text-xl">Overview</span></div>
 					<ul role="list" class="marker:--color-text ml-6 list-disc">
-						<li>I have 3 years of professional experience.</li>
-						<li>I have been studying software development for 8 years.</li>
+						{#each data.info.description as paragraph}
+							<li>{paragraph}</li>
+						{/each}
 					</ul>
 
 					<div class="my-4">
 						<span class="text-xl">Top Skills</span>
 					</div>
 					<div class="flex flex-wrap gap-3">
-						<Skill name="Lorem" />
-						<Skill name="Lorem" />
-						<Skill name="Lorem" />
-						<Skill name="Lorem" />
-						<Skill name="Lorem" />
-						<Skill name="Lorem" />
+						{#each data.info.skills as skill}
+							<Skill name={skill.name} />
+						{/each}
 					</div>
 				</div>
 				<div class="w-full">
 					<div class="mb-4"><span class="text-xl">Work</span></div>
 					<div class="flex flex-col gap-4">
-						<div>
-							<div class="flex justify-between">
-								<span>Company ABC</span>
-								<span>(xxxx - xxxx)</span>
+						{#each data.info.work as work}
+							<div>
+								<div class="flex justify-between">
+									<span>{work.name}</span>
+									<span
+										>({new Date(work.startDate).getFullYear()} - {new Date(
+											work.endDate
+										).getFullYear()})</span
+									>
+								</div>
+								<ul role="list" class="marker:--color-text ml-6 list-disc">
+									{#each work.description as paragraph}
+										<li>{paragraph}</li>
+									{/each}
+								</ul>
 							</div>
-							<ul role="list" class="marker:--color-text ml-6 list-disc">
-								<li>A really big description to see if the word wrapping is correct</li>
-							</ul>
-						</div>
-						<div>
-							<div class="flex justify-between">
-								<span>Company DEF</span>
-								<span>(xxxx - xxxx)</span>
-							</div>
-							<ul role="list" class="marker:--color-text ml-6 list-disc">
-								<li>A really big description to see if the word wrapping is correct</li>
-							</ul>
-						</div>
+						{/each}
 					</div>
 				</div>
 				<div class="w-full">
@@ -133,24 +130,23 @@
 						<span class="text-xl">Education</span>
 					</div>
 					<div class="flex flex-col gap-4">
-						<div>
-							<div class="flex justify-between">
-								<span>University ABC</span>
-								<span>(xxxx - xxxx)</span>
+						{#each data.info.education as education}
+							<div>
+								<div class="flex justify-between">
+									<span>{education.name}</span>
+									<span
+										>({new Date(education.startDate).getFullYear()} - {new Date(
+											education.endDate
+										).getFullYear()})</span
+									>
+								</div>
+								<ul role="list" class="marker:--color-text ml-6 list-disc">
+									{#each education.description as paragraph}
+										<li>{paragraph}</li>
+									{/each}
+								</ul>
 							</div>
-							<ul role="list" class="marker:--color-text ml-6 list-disc">
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							</ul>
-						</div>
-						<div>
-							<div class="flex justify-between">
-								<span>School DEF</span>
-								<span>(xxxx - xxxx)</span>
-							</div>
-							<ul role="list" class="marker:--color-text ml-6 list-disc">
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							</ul>
-						</div>
+						{/each}
 					</div>
 				</div>
 			</div>
@@ -175,7 +171,7 @@
 	<div class="flex h-full w-full items-center justify-end p-6">
 		<div class="grid h-full w-full grid-cols-3 items-center justify-between">
 			<div class="col-start-2 flex flex-col items-center justify-center">
-				<span>Bárbara Port © {`${new Date().getFullYear()}`}</span>
+				<span>{data.info.name} © {`${new Date().getFullYear()}`}</span>
 				<div class="text-xs">
 					<span>Made with </span>
 					<span class="font-medium">Svelte</span>

@@ -15,6 +15,7 @@ type Info = {
 		url: string;
 		alt: string;
 	};
+	social: Social;
 };
 
 type Experience = {
@@ -23,4 +24,10 @@ type Experience = {
 	startDate: string;
 	endDate: string;
 	description: string[];
+};
+
+type Social = {
+	linkedin: string;
+	github: string;
+	youtube: string;
 };

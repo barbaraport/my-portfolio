@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<div class="flex w-full items-center justify-center text-nowrap">
-			<a href="https://linkedin.com/in/barbaraport" class="flex gap-3 text-4xl font-bold"
+			<a href={info.social.linkedin} class="flex gap-3 text-4xl font-bold"
 				>Let's work together
 				<div class="flex items-center justify-center">
 					<img

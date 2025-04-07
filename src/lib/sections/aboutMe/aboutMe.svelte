@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { AboutMeSectionProps } from '$lib/components/dtos/AboutMeSectionProps';
+	import Experience from '$lib/components/experience.svelte';
 	import Skill from '$lib/components/skill.svelte';
 
 	const { info }: AboutMeSectionProps = $props();
@@ -46,21 +47,7 @@
 					<div class="mb-4"><span class="text-xl">Work</span></div>
 					<div class="flex flex-col gap-4">
 						{#each info.work as work}
-							<div>
-								<div class="flex justify-between">
-									<span>{work.name}</span>
-									<span
-										>({new Date(work.startDate).getFullYear()} - {new Date(
-											work.endDate
-										).getFullYear()})</span
-									>
-								</div>
-								<ul role="list" class="marker:--color-text ml-6 list-disc">
-									{#each work.description as paragraph}
-										<li>{paragraph}</li>
-									{/each}
-								</ul>
-							</div>
+							<Experience experience={work} />
 						{/each}
 					</div>
 				</div>
@@ -70,23 +57,7 @@
 					</div>
 					<div class="flex flex-col gap-4">
 						{#each info.education as education}
-							<div>
-								<div class="flex justify-between">
-									<div class="w-full"><span>{education.name}</span></div>
-									<div class="nowrap flex justify-end whitespace-nowrap">
-										<span
-											>({new Date(education.startDate).getFullYear()} - {new Date(
-												education.endDate
-											).getFullYear()})</span
-										>
-									</div>
-								</div>
-								<ul role="list" class="marker:--color-text ml-6 list-disc">
-									{#each education.description as paragraph}
-										<li>{paragraph}</li>
-									{/each}
-								</ul>
-							</div>
+							<Experience experience={education} />
 						{/each}
 					</div>
 				</div>

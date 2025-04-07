@@ -5,7 +5,7 @@
 	const { info }: AboutMeSectionProps = $props();
 </script>
 
-<div class="h-[calc(100vh-96px)]">
+<div class="min-h-[calc(100vh-96px)]">
 	<div class="flex flex-col items-center justify-center gap-3">
 		<div class="mx-6 flex flex-col gap-6 py-3">
 			<div class="flex flex-col items-center justify-center gap-3">
@@ -72,12 +72,14 @@
 						{#each info.education as education}
 							<div>
 								<div class="flex justify-between">
-									<span>{education.name}</span>
-									<span
-										>({new Date(education.startDate).getFullYear()} - {new Date(
-											education.endDate
-										).getFullYear()})</span
-									>
+									<div class="w-full"><span>{education.name}</span></div>
+									<div class="nowrap flex justify-end whitespace-nowrap">
+										<span
+											>({new Date(education.startDate).getFullYear()} - {new Date(
+												education.endDate
+											).getFullYear()})</span
+										>
+									</div>
 								</div>
 								<ul role="list" class="marker:--color-text ml-6 list-disc">
 									{#each education.description as paragraph}

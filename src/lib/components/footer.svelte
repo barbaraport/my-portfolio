@@ -12,9 +12,9 @@
 				<span>{info.name} © {`${new Date().getFullYear()}`}</span>
 				<div class="text-xs">
 					<span>Made with </span>
-					<span class="font-medium">Svelte</span>
+					<a class="font-medium" href="https://svelte.dev/">Svelte</a>
 					<span>and </span>
-					<span class="font-medium">Tailwind CSS</span>
+					<a class="font-medium" href="https://tailwindcss.com/">Tailwind CSS</a>
 					<span>{'<3'}</span>
 				</div>
 			</div>
@@ -31,12 +31,12 @@
 						alt="icon that when clicked, redirects to my Github profile."
 					/></a
 				>
-				<a href={info.social.youtube}
+				<!-- <a href={info.social.youtube}
 					><img
 						src="/src/assets/icons/youtube.png"
 						alt="icon that when clicked, redirects to my YouTube channel."
 					/></a
-				>
+				> -->
 			</div>
 		</div>
 	</div>

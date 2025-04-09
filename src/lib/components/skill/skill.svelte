@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { SkillProps } from './dtos/SkillProps';
+	import type { SkillProps } from './SkillProps';
 
 	let { name }: SkillProps = $props();
 </script>

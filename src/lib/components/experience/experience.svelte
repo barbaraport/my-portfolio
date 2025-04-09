@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ExperienceProps } from './dtos/ExperienceProps';
+	import type { ExperienceProps } from './ExperienceProps';
 
 	const { experience }: ExperienceProps = $props();
 

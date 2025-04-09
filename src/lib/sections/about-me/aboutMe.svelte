@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { AboutMeSectionProps } from '$lib/components/dtos/AboutMeSectionProps';
-	import Experience from '$lib/components/experience.svelte';
-	import Skill from '$lib/components/skill.svelte';
+	import type { AboutMeSectionProps } from '$lib/sections/about-me/AboutMeProps';
+	import Experience from '$lib/components/experience/experience.svelte';
+	import Skill from '$lib/components/skill/skill.svelte';
 
 	const { info }: AboutMeSectionProps = $props();
 </script>

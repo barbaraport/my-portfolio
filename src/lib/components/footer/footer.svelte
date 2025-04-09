@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { FooterProps } from './dtos/FooterProps';
+	import type { FooterProps } from './FooterProps';
 
 	const { info }: FooterProps = $props();
 </script>

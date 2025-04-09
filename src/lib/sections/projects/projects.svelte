@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { ProjectsSectionProps } from '$lib/components/dtos/ProjectsSectionProps';
-	import Project from '$lib/components/project.svelte';
+	import type { ProjectsSectionProps } from '$lib/sections/projects/ProjectsProps';
+	import Project from '$lib/components/project/project.svelte';
 	const { projects }: ProjectsSectionProps = $props();
 </script>
 

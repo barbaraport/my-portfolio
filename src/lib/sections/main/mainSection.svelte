@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { MainSectionProps } from '$lib/components/dtos/MainSectionProps';
-	import Navbar from '$lib/components/navbar.svelte';
+	import type { MainSectionProps } from '$lib/sections/main/MainSectionProps';
+	import Navbar from '$lib/components/navBar/navbar.svelte';
 	let { name }: MainSectionProps = $props();
 </script>
 

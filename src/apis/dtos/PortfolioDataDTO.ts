@@ -1,5 +1,3 @@
-import type { Skill } from './SkillDTO';
-
 export interface PortfolioData {
 	info: Info;
 	projects: Project[];
@@ -12,7 +10,10 @@ interface Info {
 	skills: Skill[];
 	education: Experience[];
 	social: Social;
-	photo: Image;
+}
+
+export interface Skill {
+	name: string;
 }
 
 interface Experience {

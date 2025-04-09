@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { ProjectProps } from './dtos/ProjectProps';
-	import Skill from './skill.svelte';
+	import type { ProjectProps } from './ProjectProps';
+	import Skill from '../skill/skill.svelte';
 	let { name, description, image, skills }: ProjectProps = $props();
 </script>
 

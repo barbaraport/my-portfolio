@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { NavBarProps } from './dtos/NavBarProps';
+	import type { NavBarProps } from './NavBarProps';
 	let { name }: NavBarProps = $props();
 </script>
 

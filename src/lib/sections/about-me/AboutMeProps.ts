@@ -1,4 +1,4 @@
-import type { SkillProps } from './SkillProps';
+import type { SkillProps } from '../../components/skill/SkillProps';
 
 export type AboutMeSectionProps = {
 	info: Info;

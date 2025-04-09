@@ -1,4 +1,4 @@
-import type { SkillProps } from './SkillProps';
+import type { SkillProps } from '../skill/SkillProps';
 
 export interface ProjectProps {
 	name: string;

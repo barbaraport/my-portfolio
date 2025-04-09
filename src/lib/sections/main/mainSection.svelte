@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { MainSectionProps } from '$lib/sections/main/MainSectionProps';
 	import Navbar from '$lib/components/navBar/navbar.svelte';
-	let { personName }: MainSectionProps = $props();
+	let { info }: MainSectionProps = $props();
 </script>
 
-<Navbar {personName} />
+<Navbar {info} />
 <div class="bg h-[calc(100vh-64px)] bg-cover bg-center bg-no-repeat">
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="flex h-1/2 flex-col items-center justify-end gap-2.5">

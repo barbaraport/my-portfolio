@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { Sections } from '$lib/constants/sections';
 	import type { NavBarProps } from './NavBarProps';
-	const { personName }: NavBarProps = $props();
+	const { info }: NavBarProps = $props();
+	const { name, social } = info;
 </script>
 
 <div class="h-16">
 	<div class="flex place-content-between p-6">
 		<div>
-			<span>{personName}</span>
+			<a href={social.linkedin}><span>{name}</span></a>
 		</div>
 		<div class="flex gap-7">
 			<a href={`#${Sections.PROJECTS}`}>Projects</a>

@@ -1,3 +1,5 @@
+import type { Info } from '../../../apis/daos/PortfolioData';
+
 export type MainSectionProps = {
-	personName: string;
+	info: Info;
 };

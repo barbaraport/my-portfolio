@@ -9,7 +9,7 @@
 	const { info, projects } = data;
 </script>
 
-<MainSection personName={info.name} />
+<MainSection {info} />
 
 <Projects {projects} />
 

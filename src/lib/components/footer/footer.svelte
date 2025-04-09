@@ -10,7 +10,7 @@
 	<div class="flex h-full w-full items-center justify-end p-6">
 		<div class="grid h-full w-full grid-cols-3 items-center justify-between">
 			<div class="col-start-2 flex flex-col items-center justify-center">
-				<span>{name} © {`${new Date().getFullYear()}`}</span>
+				<span><a href={social.linkedin}>{name}</a> © {`${new Date().getFullYear()}`}</span>
 				<div class="text-xs">
 					<span>Made with </span>
 					<a class="font-medium" href="https://svelte.dev/">Svelte</a>

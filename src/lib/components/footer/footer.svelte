@@ -2,6 +2,7 @@
 	import type { FooterProps } from './FooterProps';
 
 	const { info }: FooterProps = $props();
+	const { name, social } = info;
 </script>
 
 <div class="h-24">
@@ -9,7 +10,7 @@
 	<div class="flex h-full w-full items-center justify-end p-6">
 		<div class="grid h-full w-full grid-cols-3 items-center justify-between">
 			<div class="col-start-2 flex flex-col items-center justify-center">
-				<span>{info.name} © {`${new Date().getFullYear()}`}</span>
+				<span>{name} © {`${new Date().getFullYear()}`}</span>
 				<div class="text-xs">
 					<span>Made with </span>
 					<a class="font-medium" href="https://svelte.dev/">Svelte</a>
@@ -19,19 +20,19 @@
 				</div>
 			</div>
 			<div class="col-start-3 flex items-center justify-end gap-6">
-				<a href={info.social.linkedin}
+				<a href={social.linkedin}
 					><img
 						src="/src/assets/icons/linkedin.png"
 						alt="icon that when clicked, redirects to my LinkedIn profile."
 					/></a
 				>
-				<a href={info.social.github}
+				<a href={social.github}
 					><img
 						src="/src/assets/icons/github.png"
 						alt="icon that when clicked, redirects to my Github profile."
 					/></a
 				>
-				<!-- <a href={info.social.youtube}
+				<!-- <a href={social.youtube}
 					><img
 						src="/src/assets/icons/youtube.png"
 						alt="icon that when clicked, redirects to my YouTube channel."

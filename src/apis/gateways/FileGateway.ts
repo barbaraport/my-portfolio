@@ -1,4 +1,4 @@
-import type { PortfolioData } from '../dtos/PortfolioDataDTO';
+import type { PortfolioData } from '../daos/PortfolioData';
 import { Gateway } from './gateway';
 import data from '../data/data.json';
 

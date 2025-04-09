@@ -1,4 +1,4 @@
-import type { PortfolioData } from '../dtos/PortfolioDataDTO';
+import type { PortfolioData } from '../daos/PortfolioData';
 
 export abstract class Gateway {
 	abstract fetch(): Promise<PortfolioData>;

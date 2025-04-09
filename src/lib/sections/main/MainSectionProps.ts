@@ -1,3 +1,3 @@
 export type MainSectionProps = {
-	name: string;
+	personName: string;
 };

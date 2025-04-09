@@ -1,4 +1,4 @@
-import type { PortfolioData } from '../apis/dtos/PortfolioDataDTO';
+import type { PortfolioData } from '../apis/daos/PortfolioData';
 import { FileGateway } from '../apis/gateways/FileGateway';
 import { DataService } from '../apis/services/DataService';
 import type { PageServerLoad } from './$types';
@@ -13,6 +13,6 @@ export const load: PageServerLoad = async () => {
 		})
 		.catch((error) => {
 			console.error(error);
-			return { projects: [] } as PortfolioData;
+			return {} as PortfolioData;
 		});
 };

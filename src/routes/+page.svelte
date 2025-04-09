@@ -5,13 +5,14 @@
 	import Projects from '$lib/sections/projects/projects.svelte';
 	import type { PageProps } from './$types';
 
-	let { data }: PageProps = $props();
+	const { data }: PageProps = $props();
+	const { info, projects } = data;
 </script>
 
-<MainSection name={data.info.name} />
+<MainSection personName={info.name} />
 
-<Projects projects={data.projects} />
+<Projects {projects} />
 
-<AboutMe info={data.info} />
+<AboutMe {info} />
 
-<Footer info={data.info} />
+<Footer {info} />

@@ -1,3 +1,3 @@
-export interface SkillProps {
-	name: string;
-}
+import type { Skill } from '../../../apis/daos/PortfolioData';
+
+export type SkillProps = Skill;

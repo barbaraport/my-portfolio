@@ -3,8 +3,9 @@ export interface PortfolioData {
 	projects: Project[];
 }
 
-interface Info {
+export interface Info {
 	name: string;
+	photo: Image;
 	role: string;
 	description: string[];
 	skills: Skill[];
@@ -16,7 +17,7 @@ export interface Skill {
 	name: string;
 }
 
-interface Experience {
+export interface Experience {
 	name: string;
 	place?: string;
 	startDate: string;
@@ -24,20 +25,20 @@ interface Experience {
 	description: string[];
 }
 
-interface Social {
+export interface Social {
 	linkedin: string;
 	github: string;
 	youtube: string;
 }
 
-interface Project {
+export interface Project {
 	name: string;
 	description: string;
 	image: Image;
 	skills: Skill[];
 }
 
-interface Image {
+export interface Image {
 	url: string;
 	alt: string;
 }

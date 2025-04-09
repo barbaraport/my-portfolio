@@ -1,11 +1,3 @@
-import type { SkillProps } from '../skill/SkillProps';
+import type { Project } from '../../../apis/daos/PortfolioData';
 
-export interface ProjectProps {
-	name: string;
-	description: string;
-	image: {
-		url: string;
-		alt: string;
-	};
-	skills: SkillProps[];
-}
+export type ProjectProps = Project;

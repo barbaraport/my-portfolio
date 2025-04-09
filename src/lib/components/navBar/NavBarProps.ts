@@ -1,3 +1,3 @@
 export type NavBarProps = {
-	name: string;
+	personName: string;
 };

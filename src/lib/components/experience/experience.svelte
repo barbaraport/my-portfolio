@@ -3,6 +3,8 @@
 
 	const { experience }: ExperienceProps = $props();
 
+	const { name, place, description, startDate, endDate } = experience;
+
 	function getYearFromDate(date?: Date | string): number {
 		if (!date) return new Date().getFullYear();
 
@@ -13,16 +15,16 @@
 <div>
 	<div class="flex justify-between">
 		<div>
-			<div class="w-full"><span>{experience.name}</span></div>
-			<div class="w-full"><span class="text-sm">{experience.place}</span></div>
+			<div class="w-full"><span>{name}</span></div>
+			<div class="w-full"><span class="text-sm">{place}</span></div>
 		</div>
 
 		<div class="nowrap flex justify-end whitespace-nowrap">
-			<span>({getYearFromDate(experience.startDate)} - {getYearFromDate(experience.endDate)})</span>
+			<span>({getYearFromDate(startDate)} - {getYearFromDate(endDate)})</span>
 		</div>
 	</div>
 	<ul role="list" class="marker:--color-text ml-6 list-disc">
-		{#each experience.description as paragraph}
+		{#each description as paragraph}
 			<li>{paragraph}</li>
 		{/each}
 	</ul>

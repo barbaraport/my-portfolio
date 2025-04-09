@@ -1,9 +1,5 @@
+import type { Experience } from '../../../apis/daos/PortfolioData';
+
 export type ExperienceProps = {
-	experience: {
-		name: string;
-		place: string;
-		startDate: string;
-		endDate: string;
-		description: string[];
-	};
+	experience: Experience;
 };

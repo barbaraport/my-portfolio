@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { ProjectsSectionProps } from '$lib/sections/projects/ProjectsProps';
+	import type { ProjectsProps } from '$lib/sections/projects/ProjectsProps';
 	import Project from '$lib/components/project/project.svelte';
-	const { projects }: ProjectsSectionProps = $props();
+	const { projects }: ProjectsProps = $props();
 </script>
 
 <div class="min-h-dvh">

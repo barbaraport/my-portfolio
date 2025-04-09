@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { ProjectProps } from './ProjectProps';
 	import Skill from '../skill/skill.svelte';
-	let { name, description, image, skills }: ProjectProps = $props();
+	const { name, description, image, skills }: ProjectProps = $props();
 </script>
 
 <div class="flex w-full rounded-lg border">

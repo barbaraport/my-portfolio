@@ -1,10 +1,5 @@
+import type { Info } from '../../../apis/daos/PortfolioData';
+
 export type FooterProps = {
-	info: {
-		name: string;
-		social: {
-			linkedin: string;
-			github: string;
-			youtube: string;
-		};
-	};
+	info: Info;
 };

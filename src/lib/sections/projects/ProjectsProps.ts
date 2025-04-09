@@ -1,5 +1,5 @@
-import type { ProjectProps } from '../../components/project/ProjectProps';
+import type { Project } from '../../../apis/daos/PortfolioData';
 
-export type ProjectsSectionProps = {
-	projects: ProjectProps[];
+export type ProjectsProps = {
+	projects: Project[];
 };

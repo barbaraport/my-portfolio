@@ -10,7 +10,6 @@ interface Info {
 	role: string;
 	description: string[];
 	skills: Skill[];
-	work: Experience[];
 	education: Experience[];
 	social: Social;
 	photo: Image;
@@ -18,9 +17,9 @@ interface Info {
 
 interface Experience {
 	name: string;
-	place: string;
+	place?: string;
 	startDate: string;
-	endDate: string;
+	endDate?: string;
 	description: string[];
 }
 

@@ -43,14 +43,14 @@
 						{/each}
 					</div>
 				</div>
-				<div class="w-full">
+				<!-- <div class="w-full">
 					<div class="mb-4"><span class="text-xl">Work</span></div>
 					<div class="flex flex-col gap-4">
 						{#each info.work as work}
 							<Experience experience={work} />
 						{/each}
 					</div>
-				</div>
+				</div> -->
 				<div class="w-full">
 					<div class="mb-4">
 						<span class="text-xl">Education</span>

@@ -1,10 +1,11 @@
 <script lang="ts">
 	import type { ProjectsProps } from '$lib/sections/projects/ProjectsProps';
 	import Project from '$lib/components/project/project.svelte';
+	import { Sections } from '$lib/constants/sections';
 	const { projects }: ProjectsProps = $props();
 </script>
 
-<div class="min-h-dvh">
+<div id={Sections.PROJECTS} class="min-h-dvh">
 	<div class="flex flex-col items-center justify-center gap-3 py-3">
 		<span class="text-4xl font-semibold">Projects</span>
 		<div class="text-2xl">

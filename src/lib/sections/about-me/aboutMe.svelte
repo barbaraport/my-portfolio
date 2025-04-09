@@ -2,12 +2,13 @@
 	import type { AboutMeSectionProps } from '$lib/sections/about-me/AboutMeProps';
 	import Experience from '$lib/components/experience/experience.svelte';
 	import Skill from '$lib/components/skill/skill.svelte';
+	import { Sections } from '$lib/constants/sections';
 
 	const { info }: AboutMeSectionProps = $props();
 	const { name, description, skills, education, social, photo } = info;
 </script>
 
-<div class="min-h-[calc(100vh-96px)]">
+<div id={Sections.ABOUT_ME} class="min-h-[calc(100vh-96px)]">
 	<div class="flex flex-col items-center justify-center gap-3">
 		<div class="mx-6 flex flex-col gap-6 py-3">
 			<div class="flex flex-col items-center justify-center gap-3">

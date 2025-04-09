@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex w-full items-center justify-center text-nowrap">
+		<div class="mb-3 flex w-full items-center justify-center text-nowrap">
 			<a href={info.social.linkedin} class="flex gap-3 text-4xl font-bold"
 				>Let's work together
 				<div class="flex items-center justify-center">

@@ -5,17 +5,17 @@
 	const { projects }: ProjectsProps = $props();
 </script>
 
-<div id={Sections.PROJECTS} class="min-h-dvh">
+<div id={Sections.PROJECTS} class="min-h-dvh px-4">
 	<div class="flex flex-col items-center justify-center gap-3 py-3">
-		<span class="text-4xl font-semibold">Projects</span>
-		<div class="text-2xl">
+		<span class="text-4xl font-semibold max-[644px]:text-2xl">Projects</span>
+		<div class="items-center justify-center text-center text-2xl max-[644px]:text-lg">
 			<span>Quality</span>
 			<span class="font-light">in code, </span>
 			<span>excellence </span>
 			<span class="font-light">in delivery.</span>
 		</div>
 	</div>
-	<div class="mx-6 flex flex-col items-center gap-3">
+	<div class="flex flex-col items-center gap-3">
 		{#each projects as project}
 			<Project
 				name={project?.name}

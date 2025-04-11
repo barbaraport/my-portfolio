@@ -8,7 +8,7 @@
 <div class="bg h-[calc(100vh-64px)] bg-cover bg-center bg-no-repeat px-4">
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="center flex h-1/2 flex-col items-center justify-end gap-2.5 text-center">
-			<span class="max-[644px]:text-xs sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
+			<span class="max-[644px]:text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
 				>Looking for an expert software developer? Let's work together to find your solution.</span
 			>
 			<span

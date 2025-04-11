@@ -5,11 +5,11 @@
 	const { name, social } = info;
 </script>
 
-<div class="h-24">
+<div class="min-h-24">
 	<hr class="border-divider" />
 	<div class="flex h-full w-full items-center justify-end p-6">
-		<div class="grid h-full w-full grid-cols-3 items-center justify-between">
-			<div class="col-start-2 flex flex-col items-center justify-center">
+		<div class="grid h-full w-full grid-cols-1 items-center justify-between gap-3 md:grid-cols-3">
+			<div class="col-start-1 flex flex-col items-center justify-center text-center md:col-start-2">
 				<span><a href={social.linkedin}>{name}</a> © {`${new Date().getFullYear()}`}</span>
 				<div class="text-xs">
 					<span>Made with </span>
@@ -19,7 +19,7 @@
 					<span>{'<3'}</span>
 				</div>
 			</div>
-			<div class="col-start-3 flex items-center justify-end gap-6">
+			<div class="col-start-1 flex items-center justify-center gap-6 md:col-start-3 md:justify-end">
 				<a href={social.linkedin}
 					><img
 						src="/src/assets/icons/linkedin.png"

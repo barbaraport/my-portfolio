@@ -3,6 +3,7 @@
 	import Experience from '$lib/components/experience/experience.svelte';
 	import Skill from '$lib/components/skill/skill.svelte';
 	import { Sections } from '$lib/constants/sections';
+	import SectionTitle from '$lib/components/sectionTitle/sectionTitle.svelte';
 
 	const { info }: AboutMeSectionProps = $props();
 	const { name, description, skills, education, social, photo } = info;
@@ -12,7 +13,7 @@
 	<div class="flex flex-col items-center justify-center gap-3">
 		<div class="mx-6 flex flex-col gap-6 py-3">
 			<div class="flex flex-col items-center justify-center gap-3">
-				<span class="text-4xl font-semibold">About me</span>
+				<SectionTitle text="About me" />
 				<div class="text-2xl">
 					<span>Nice to meet you. I'm </span>
 					<span class="font-bold">{name}</span><span>.</span>

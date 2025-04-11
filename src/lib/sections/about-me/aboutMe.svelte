@@ -21,7 +21,7 @@
 					<span>.</span>
 				</SectionSubtitle>
 			</div>
-			<div class="flex w-full content-between gap-3">
+			<div class="flex w-full flex-col content-between gap-3 lg:flex-row">
 				<div class="flex w-full items-center justify-center">
 					<img
 						src={photo.url}

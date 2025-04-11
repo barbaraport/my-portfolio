@@ -10,7 +10,7 @@
 	const { name, description, skills, education, social, photo } = info;
 </script>
 
-<div id={Sections.ABOUT_ME} class="min-h-[calc(100vh-96px)]">
+<div id={Sections.ABOUT_ME}>
 	<div class="flex flex-col items-center justify-center gap-3">
 		<div class="mx-6 flex flex-col gap-6 py-3">
 			<div class="flex flex-col items-center justify-center gap-3">
@@ -21,7 +21,7 @@
 					<span>.</span>
 				</SectionSubtitle>
 			</div>
-			<div class="flex w-full flex-col content-between gap-3 lg:flex-row">
+			<div class="flex w-full flex-col content-between gap-4 lg:flex-row">
 				<div class="flex w-full items-center justify-center">
 					<img
 						src={photo.url}
@@ -69,16 +69,18 @@
 			</div>
 		</div>
 		<div class="mb-3 flex w-full items-center justify-center text-nowrap">
-			<a href={social.linkedin} class="flex gap-3 text-4xl font-bold"
-				>Let's work together
-				<div class="flex items-center justify-center">
-					<img
-						width="24"
-						src="/src/assets/icons/external-link.png"
-						alt="external link to my LinkedIn profile."
-					/>
-				</div>
-			</a>
+			<SectionSubtitle>
+				<a href={social.linkedin} class="flex gap-3 font-bold"
+					>Let's work together
+					<div class="flex items-center justify-center">
+						<img
+							src="/src/assets/icons/external-link.png"
+							alt="external link to my LinkedIn profile."
+							class="h-4 w-4"
+						/>
+					</div>
+				</a>
+			</SectionSubtitle>
 		</div>
 	</div>
 </div>

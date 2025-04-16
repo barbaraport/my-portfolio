@@ -14,7 +14,7 @@
 			{ "name": "Tailwind CSS" },
 			{ "name": "CSS" },
 			{ "name": "Java" },
-			{ "name": "Spring Boot" },
+			{ "name": "Spring Framework" },
 			{ "name": "NestJS" },
 			{ "name": "Prisma ORM" },
 			{ "name": "PostgreSQL" },
@@ -53,24 +53,19 @@
 	},
 	"projects": [
 		{
-			"name": "ehSoja",
-			"description": "Android mobile app for image recognition through artificial intelligence.",
+			"name": "My Portfolio",
+			"description": "My portfolio, where I showcase my projects and skills.",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/my-portfolio.png",
 				"alt": "Image 1"
 			},
 			"skills": [
-				{ "name": "React Native" },
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Tailwind CSS" },
 				{ "name": "TypeScript" },
-				{ "name": "Styled Components" },
-				{ "name": "Python" },
-				{ "name": "Flask" },
-				{ "name": "Node.js" },
-				{ "name": "NestJS" },
-				{ "name": "Prisma ORM" },
-				{ "name": "PostgreSQL" },
-				{ "name": "Firebase" },
-				{ "name": "TensorFlow" },
+				{ "name": "JavaScript" },
+				{ "name": "Svelte" },
 				{ "name": "Git" },
 				{ "name": "GitHub" }
 			]
@@ -79,7 +74,7 @@
 			"name": "FolConn",
 			"description": "Android mobile app that centralizes vehicle manuals and notifies users of their necessary adjustments, and a Web Application to manage the registered users",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/folconn.gif",
 				"alt": "Image 1"
 			},
 			"skills": [
@@ -101,7 +96,7 @@
 			"name": "AirplaneDocGenerator",
 			"description": "A desktop application to automate the generation of user manuals for products.",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/airplanedocgenerator.gif",
 				"alt": "Image 1"
 			},
 			"skills": [
@@ -114,8 +109,26 @@
 				{ "name": "CSS" },
 				{ "name": "Java" },
 				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
 				{ "name": "REST APIs" },
 				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "Public Data Analysis - Employability in Brazil",
+			"description": "An analysis of employment and demission rates in Brazil.",
+			"image": {
+				"url": "/src/assets/project-images/Public-Data-Analysis-Employability-in-Brazil.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Python" },
+				{ "name": "Jupyter Notebook" },
+				{ "name": "Pandas" },
+				{ "name": "Matplotlib" },
+				{ "name": "NumPy" },
 				{ "name": "Git" },
 				{ "name": "GitHub" }
 			]
@@ -124,7 +137,7 @@
 			"name": "SkillShare",
 			"description": "An Learning Management System (LMS), as a web application.",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/skillshare.png",
 				"alt": "Image 1"
 			},
 			"skills": [
@@ -133,16 +146,46 @@
 				{ "name": "Thymeleaf" },
 				{ "name": "Java" },
 				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
 				{ "name": "PostgreSQL" },
 				{ "name": "Git" },
 				{ "name": "GitHub" }
 			]
 		},
 		{
-			"name": "RoadTracker",
-			"description": "A desktop application to manage working hours.",
+			"name": "Beauty - Client and Products Management System",
+			"description": "Client and products registration system for Beauty Saloons, as a web application. It is possible to see insights of most used services.",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/Beauty_POAA.gif",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Bootstrap" },
+				{ "name": "Java" },
+				{ "name": "Thymeleaf" },
+				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
+				{ "name": "MySQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "JSnake",
+			"description": "A Java snake game",
+			"image": {
+				"url": "/src/assets/project-images/jsnake.gif",
+				"alt": "Image 1"
+			},
+			"skills": [{ "name": "Java" }, { "name": "Git" }, { "name": "GitHub" }]
+		},
+		{
+			"name": "RoadTracker",
+			"description": "A desktop application to manage driver's working hours.",
+			"image": {
+				"url": "/src/assets/project-images/roadtracker.png",
 				"alt": "Image 1"
 			},
 			"skills": [
@@ -158,7 +201,7 @@
 			"name": "TempVerify",
 			"description": "Android mobile app for room temperature and humidity monitoring.",
 			"image": {
-				"url": "https://fakeimg.pl/372x200",
+				"url": "/src/assets/project-images/temp-verify.png",
 				"alt": "Image 1"
 			},
 			"skills": [

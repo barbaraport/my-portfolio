@@ -17,8 +17,7 @@
 				<SectionTitle text="About me" />
 				<SectionSubtitle>
 					<span>Nice to meet you. I'm </span>
-					<span class="font-bold">{name}</span>
-					<span>.</span>
+					<span class="font-bold">{name}</span><span>.</span>
 				</SectionSubtitle>
 			</div>
 			<div class="flex w-full flex-col content-between gap-4 lg:flex-row">

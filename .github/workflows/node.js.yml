@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    name: Run tests and build project
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,5 +27,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - run: yarn ci
-      - run: yarn run build --if-present
       - run: yarn test
+      - run: yarn run build --if-present

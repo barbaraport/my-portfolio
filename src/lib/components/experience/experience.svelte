@@ -1,15 +1,10 @@
 <script lang="ts">
+	import { getYearFromDate } from '$lib/helpers/getYearFromDate/getYearFromDate';
 	import type { ExperienceProps } from './ExperienceProps';
 
 	const { experience }: ExperienceProps = $props();
 
 	const { name, place, description, startDate, endDate } = experience;
-
-	function getYearFromDate(date?: Date | string): number {
-		if (!date) return new Date().getFullYear();
-
-		return new Date(date).getFullYear();
-	}
 </script>
 
 <div>

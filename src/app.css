@@ -1,1 +1,20 @@
-@import 'tailwindcss'
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--font-roboto: 'Roboto', sans-serif;
+	--color-bg: #2d2d34;
+	--color-text: #fcfcfc;
+	--color-divider: #454545;
+}
+
+:root {
+	font-family: var(--font-roboto);
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
+
+.bg {
+	background-image:
+		linear-gradient(to right, rgba(45, 45, 52, 0.85), rgba(45, 45, 52, 0.7)), url(assets/bg.jpg);
+}

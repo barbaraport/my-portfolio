@@ -1,0 +1,219 @@
+{
+	"info": {
+		"name": "Bárbara Port",
+		"role": "Full Stack Developer",
+		"description": [
+			"I have almost 4 years of professional experience.",
+			"I have been studying software development for 8 years."
+		],
+		"skills": [
+			{ "name": "React" },
+			{ "name": "HTML" },
+			{ "name": "TypeScript" },
+			{ "name": "JavaScript" },
+			{ "name": "Tailwind CSS" },
+			{ "name": "CSS" },
+			{ "name": "Java" },
+			{ "name": "Spring Framework" },
+			{ "name": "NestJS" },
+			{ "name": "Prisma ORM" },
+			{ "name": "PostgreSQL" },
+			{ "name": "MySQL" },
+			{ "name": "Git" }
+		],
+		"education": [
+			{
+				"name": "Analysis and Systems Development Degree",
+				"place": "Fatec Prof. Jessen Vidal",
+				"startDate": "2020-01-01",
+				"endDate": "2022-12-31",
+				"description": [
+					"I am one of the best academic performances in the Analysis and Systems and Development undergraduate degree, over the years 2020, 2021, and 2022."
+				]
+			},
+			{
+				"name": "Computer Technician Course",
+				"place": "Etec Machado de Assis",
+				"startDate": "2017-01-01",
+				"endDate": "2019-12-31",
+				"description": [
+					"I am one of the best academic performances over the years of 2017, 2018, and 2019, on the Computer Technician Course."
+				]
+			}
+		],
+		"social": {
+			"linkedin": "https://linkedin.com/in/barbaraport",
+			"github": "https://github.com/barbaraport",
+			"youtube": "https://www.youtube.com/"
+		},
+		"photo": {
+			"url": "https://avatars.githubusercontent.com/u/62317075?v=4",
+			"alt": "Barbara's profile picture. The picture has a black background. She is a woman with a black t-shirt, that has curly and short hair. Also, she uses glasses."
+		}
+	},
+	"projects": [
+		{
+			"name": "My Portfolio",
+			"description": "My portfolio, where I showcase my projects and skills.",
+			"image": {
+				"url": "/src/assets/project-images/my-portfolio.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Tailwind CSS" },
+				{ "name": "TypeScript" },
+				{ "name": "JavaScript" },
+				{ "name": "Svelte" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "FolConn",
+			"description": "Android mobile app that centralizes vehicle manuals and notifies users of their necessary adjustments, and a Web Application to manage the registered users",
+			"image": {
+				"url": "/src/assets/project-images/folconn.gif",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "React Native" },
+				{ "name": "TypeScript" },
+				{ "name": "React" },
+				{ "name": "TypeScript" },
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Python" },
+				{ "name": "Flask" },
+				{ "name": "MongoDB" },
+				{ "name": "REST APIs" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "AirplaneDocGenerator",
+			"description": "A desktop application to automate the generation of user manuals for products.",
+			"image": {
+				"url": "/src/assets/project-images/airplanedocgenerator.gif",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Electron.js" },
+				{ "name": "React" },
+				{ "name": "JavaScript" },
+				{ "name": "Node.js" },
+				{ "name": "HTML" },
+				{ "name": "Tailwind CSS" },
+				{ "name": "CSS" },
+				{ "name": "Java" },
+				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
+				{ "name": "REST APIs" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "Public Data Analysis - Employability in Brazil",
+			"description": "An analysis of employment and demission rates in Brazil.",
+			"image": {
+				"url": "/src/assets/project-images/Public-Data-Analysis-Employability-in-Brazil.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Python" },
+				{ "name": "Jupyter Notebook" },
+				{ "name": "Pandas" },
+				{ "name": "Matplotlib" },
+				{ "name": "NumPy" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "SkillShare",
+			"description": "An Learning Management System (LMS), as a web application.",
+			"image": {
+				"url": "/src/assets/project-images/skillshare.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Thymeleaf" },
+				{ "name": "Java" },
+				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "Beauty - Client and Products Management System",
+			"description": "Client and products registration system for Beauty Saloons, as a web application. It is possible to see insights of most used services.",
+			"image": {
+				"url": "/src/assets/project-images/Beauty_POAA.gif",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "Bootstrap" },
+				{ "name": "Java" },
+				{ "name": "Thymeleaf" },
+				{ "name": "Spring Boot" },
+				{ "name": "Spring Data JPA" },
+				{ "name": "MySQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "JSnake",
+			"description": "A Java snake game",
+			"image": {
+				"url": "/src/assets/project-images/jsnake.gif",
+				"alt": "Image 1"
+			},
+			"skills": [{ "name": "Java" }, { "name": "Git" }, { "name": "GitHub" }]
+		},
+		{
+			"name": "RoadTracker",
+			"description": "A desktop application to manage driver's working hours.",
+			"image": {
+				"url": "/src/assets/project-images/roadtracker.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Java" },
+				{ "name": "JavaFX" },
+				{ "name": "Hibernate" },
+				{ "name": "PostgreSQL" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		},
+		{
+			"name": "TempVerify",
+			"description": "Android mobile app for room temperature and humidity monitoring.",
+			"image": {
+				"url": "/src/assets/project-images/temp-verify.png",
+				"alt": "Image 1"
+			},
+			"skills": [
+				{ "name": "Flutter" },
+				{ "name": "Dart" },
+				{ "name": "OneSignal" },
+				{ "name": "Firebase" },
+				{ "name": "NodeMCU" },
+				{ "name": "C" },
+				{ "name": "Git" },
+				{ "name": "GitHub" }
+			]
+		}
+	]
+}

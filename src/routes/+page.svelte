@@ -11,7 +11,9 @@
 
 <MainSection {info} />
 
-<Projects {projects} />
+{#if projects?.length > 0}
+	<Projects {projects} />
+{/if}
 
 <AboutMe {info} />
 

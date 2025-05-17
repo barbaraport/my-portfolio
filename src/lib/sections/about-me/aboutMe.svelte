@@ -73,7 +73,7 @@
 					>Let's work together
 					<div class="flex items-center justify-center">
 						<img
-							src="/src/assets/icons/external-link.png"
+							src="assets/icons/external-link.png"
 							alt="external link to my LinkedIn profile."
 							class="h-4 w-4"
 						/>

@@ -29,7 +29,7 @@
 		</div>
 		<div class="flex h-1/2 flex-col items-center justify-end">
 			<div class="mb-5">
-				<img src="/src/assets/icons/arrow.png" alt="arrow down" />
+				<img src="assets/icons/arrow.png" alt="arrow down" />
 			</div>
 		</div>
 	</div>

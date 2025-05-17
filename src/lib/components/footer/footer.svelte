@@ -22,22 +22,16 @@
 			<div class="col-start-1 flex items-center justify-center gap-6 md:col-start-3 md:justify-end">
 				<a href={social.linkedin}
 					><img
-						src="/src/assets/icons/linkedin.png"
+						src="/assets/icons/linkedin.png"
 						alt="icon that when clicked, redirects to my LinkedIn profile."
 					/></a
 				>
 				<a href={social.github}
 					><img
-						src="/src/assets/icons/github.png"
+						src="/assets/icons/github.png"
 						alt="icon that when clicked, redirects to my Github profile."
 					/></a
 				>
-				<!-- <a href={social.youtube}
-					><img
-						src="/src/assets/icons/youtube.png"
-						alt="icon that when clicked, redirects to my YouTube channel."
-					/></a
-				> -->
 			</div>
 		</div>
 	</div>

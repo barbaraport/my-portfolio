@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { MainSectionProps } from '$lib/sections/main/MainSectionProps';
-	import Navbar from '$lib/components/navBar/navbar.svelte';
-	let { info }: MainSectionProps = $props();
+	import { NavBarHeight } from '$lib/constants/components';
 </script>
 
-<Navbar {info} />
-<div class="bg h-[calc(100vh-64px)] bg-cover bg-center bg-no-repeat px-4">
+<div
+	style={`height: calc(100vh - ${NavBarHeight})`}
+	class="bg bg-cover bg-center bg-no-repeat px-4"
+>
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="center flex h-1/2 flex-col items-center justify-end gap-2.5 text-center">
 			<span class="max-[644px]:text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
@@ -29,7 +29,7 @@
 		</div>
 		<div class="flex h-1/2 flex-col items-center justify-end">
 			<div class="mb-5">
-				<img src="/src/assets/icons/arrow.png" alt="arrow down" />
+				<img src="assets/icons/arrow.png" alt="arrow down" />
 			</div>
 		</div>
 	</div>

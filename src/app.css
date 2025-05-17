@@ -16,5 +16,5 @@
 
 .bg {
 	background-image:
-		linear-gradient(to right, rgba(45, 45, 52, 0.85), rgba(45, 45, 52, 0.7)), url(assets/bg.jpg);
+		linear-gradient(to right, rgba(45, 45, 52, 0.85), rgba(45, 45, 52, 0.7)), url(/assets/bg.jpg);
 }

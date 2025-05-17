@@ -6,7 +6,7 @@
 	const { name, social } = info;
 </script>
 
-<div style={`height: ${NavBarHeight}px;`} class="flex place-content-between p-6">
+<div style={`height: ${NavBarHeight}`} class="flex place-content-between p-6">
 	<div>
 		<a href={social.linkedin}><span>{name}</span></a>
 	</div>

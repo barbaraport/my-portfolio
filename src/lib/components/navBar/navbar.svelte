@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { NavBarHeight } from '$lib/constants/components';
 	import { Sections } from '$lib/constants/sections';
 	import type { NavBarProps } from './NavBarProps';
 	const { info, projects }: NavBarProps = $props();
 	const { name, social } = info;
 </script>
 
-<div class="h-16">
+<div class={`h-${NavBarHeight}`}>
 	<div class="flex place-content-between p-6">
 		<div>
 			<a href={social.linkedin}><span>{name}</span></a>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/components/footer/footer.svelte';
+	import Navbar from '$lib/components/navBar/navbar.svelte';
 	import AboutMe from '$lib/sections/about-me/aboutMe.svelte';
 	import MainSection from '$lib/sections/main/mainSection.svelte';
 	import Projects from '$lib/sections/projects/projects.svelte';
@@ -8,6 +9,8 @@
 	const { data }: PageProps = $props();
 	const { info, projects } = data;
 </script>
+
+<Navbar {info} {projects} />
 
 <MainSection {info} />
 

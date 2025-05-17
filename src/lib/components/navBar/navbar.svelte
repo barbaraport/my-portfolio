@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Sections } from '$lib/constants/sections';
 	import type { NavBarProps } from './NavBarProps';
-	const { info }: NavBarProps = $props();
+	const { info, projects }: NavBarProps = $props();
 	const { name, social } = info;
 </script>
 
@@ -11,7 +11,9 @@
 			<a href={social.linkedin}><span>{name}</span></a>
 		</div>
 		<div class="flex gap-7">
-			<a href={`#${Sections.PROJECTS}`}>Projects</a>
+			{#if projects?.length > 0}
+				<a href={`#${Sections.PROJECTS}`}>Projects</a>
+			{/if}
 			<a href={`#${Sections.ABOUT_ME}`}>About me</a>
 		</div>
 	</div>

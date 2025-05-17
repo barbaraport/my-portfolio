@@ -4,7 +4,6 @@
 	let { info }: MainSectionProps = $props();
 </script>
 
-<Navbar {info} />
 <div class="bg h-[calc(100vh-64px)] bg-cover bg-center bg-no-repeat px-4">
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="center flex h-1/2 flex-col items-center justify-end gap-2.5 text-center">

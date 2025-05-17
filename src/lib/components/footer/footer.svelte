@@ -32,12 +32,6 @@
 						alt="icon that when clicked, redirects to my Github profile."
 					/></a
 				>
-				<!-- <a href={social.youtube}
-					><img
-						src="assets/icons/youtube.png"
-						alt="icon that when clicked, redirects to my YouTube channel."
-					/></a
-				> -->
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { MainSectionProps } from '$lib/sections/main/MainSectionProps';
 	import { NavBarHeight } from '$lib/constants/components';
-	let { info }: MainSectionProps = $props();
 </script>
 
 <div class={`bg h-[calc(100vh-${NavBarHeight})] bg-cover bg-center bg-no-repeat px-4`}>

@@ -14,7 +14,7 @@
 			<div class="w-full"><span class="text-sm">{place}</span></div>
 		</div>
 
-		<div class="nowrap flex justify-end whitespace-nowrap">
+		<div class="flex justify-end whitespace-nowrap">
 			<span>({getYearFromDate(startDate)} - {getYearFromDate(endDate)})</span>
 		</div>
 	</div>

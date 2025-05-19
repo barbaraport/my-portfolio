@@ -22,17 +22,11 @@
 			</div>
 			<div class="flex w-full flex-col content-between gap-4 lg:flex-row">
 				<div class="flex w-full items-center justify-center">
-					<img
-						src={photo.url}
-						aria-hidden="true"
-						class="rounded-full"
-						width="256"
-						alt={photo.alt}
-					/>
+					<img src={photo.url} class="rounded-full" width="256" alt={photo.alt} />
 				</div>
 				<div class="w-full">
 					<div class="mb-4"><span class="text-xl">Overview</span></div>
-					<ul role="list" class="marker:--color-text ml-6 list-disc">
+					<ul class="ml-6 list-disc text-current">
 						{#each description as paragraph}
 							<li>{paragraph}</li>
 						{/each}
@@ -51,8 +45,8 @@
 						<span class="text-xl">Education</span>
 					</div>
 					<div class="flex flex-col gap-4">
-						{#each education as education}
-							<Experience experience={education} />
+						{#each education as experience}
+							<Experience {experience} />
 						{/each}
 					</div>
 				</div>

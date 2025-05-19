@@ -12,7 +12,15 @@ export const load: PageServerLoad = async (): Promise<PortfolioData> => {
 			return data;
 		})
 		.catch((error) => {
-			console.error(error);
-			return {} as PortfolioData;
+			console.error('Failed to load portfolio data: ' + error.message);
+
+			return {
+				info: {
+					
+				},
+				projects: [],
+				skills: [],
+				experiences: []
+			} as PortfolioData;
 		});
 };

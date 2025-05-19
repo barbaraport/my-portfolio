@@ -1,3 +1,3 @@
-import type { Project } from '../../../../apis/dtos/PortfolioData';
+import type { Project } from '@api/dtos/PortfolioData';
 
 export type ProjectProps = Project;

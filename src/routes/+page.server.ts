@@ -1,6 +1,6 @@
-import type { PortfolioData } from '../apis/dtos/PortfolioData';
-import { FileGateway } from '../apis/gateways/FileGateway';
-import { DataService } from '../apis/services/DataService';
+import type { PortfolioData } from '@api/dtos/PortfolioData';
+import { FileGateway } from '@api/gateways/FileGateway';
+import { DataService } from '@api/services/DataService';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async (): Promise<PortfolioData> => {
@@ -12,15 +12,7 @@ export const load: PageServerLoad = async (): Promise<PortfolioData> => {
 			return data;
 		})
 		.catch((error) => {
-			console.error('Failed to load portfolio data: ' + error.message);
-
-			return {
-				info: {
-					
-				},
-				projects: [],
-				skills: [],
-				experiences: []
-			} as PortfolioData;
+			console.error(error);
+			return {} as PortfolioData;
 		});
 };

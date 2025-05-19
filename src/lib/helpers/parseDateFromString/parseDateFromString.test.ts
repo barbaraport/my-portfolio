@@ -10,6 +10,32 @@ describe('tests parseDateFromString function', () => {
 		expect(date.getDate()).toBe(5);
 	});
 
+	it('should correctly parse date strings from project', () => {
+		let date = parseDateFromString('2020-01-01');
+
+		expect(date.getFullYear()).toBe(2020);
+		expect(date.getMonth()).toBe(0); // Months are 0-indexed
+		expect(date.getDate()).toBe(1);
+
+		date = parseDateFromString('2022-12-31');
+
+		expect(date.getFullYear()).toBe(2022);
+		expect(date.getMonth()).toBe(11); // Months are 0-indexed
+		expect(date.getDate()).toBe(31);
+
+		date = parseDateFromString('2017-01-01');
+
+		expect(date.getFullYear()).toBe(2017);
+		expect(date.getMonth()).toBe(0); // Months are 0-indexed
+		expect(date.getDate()).toBe(1);
+
+		date = parseDateFromString('2019-12-31');
+
+		expect(date.getFullYear()).toBe(2019);
+		expect(date.getMonth()).toBe(11); // Months are 0-indexed
+		expect(date.getDate()).toBe(31);
+	});
+
 	it('should handle a leap year date correctly', () => {
 		const date = parseDateFromString('2020-02-29');
 

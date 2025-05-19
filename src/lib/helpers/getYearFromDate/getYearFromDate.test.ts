@@ -62,4 +62,22 @@ describe('tests getYearFromDate function', () => {
 		const year = getYearFromDate(date);
 		expect(year).toBe('2024');
 	});
+
+	it('should correctly get dates from project', () => {
+		let date = parseDateFromString('2020-01-01');
+		let year = getYearFromDate(date);
+		expect(year).toBe('2020');
+
+		date = parseDateFromString('2022-12-31');
+		year = getYearFromDate(date);
+		expect(year).toBe('2022');
+
+		date = parseDateFromString('2017-01-01');
+		year = getYearFromDate(date);
+		expect(year).toBe('2017');
+
+		date = parseDateFromString('2019-12-31');
+		year = getYearFromDate(date);
+		expect(year).toBe('2019');
+	});
 });

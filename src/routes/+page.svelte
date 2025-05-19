@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Footer from '$lib/components/footer/footer.svelte';
-	import Navbar from '$lib/components/navBar/navbar.svelte';
-	import AboutMe from '$lib/sections/about-me/aboutMe.svelte';
-	import MainSection from '$lib/sections/main/mainSection.svelte';
-	import Projects from '$lib/sections/projects/projects.svelte';
+	import Footer from '$lib/components/organisms/footer/footer.svelte';
+	import Navbar from '$lib/components/organisms/navBar/navbar.svelte';
+	import AboutMe from '$lib/components/templates/about-me/aboutMe.svelte';
+	import MainSection from '$lib/components/templates/main/mainSection.svelte';
+	import Projects from '$lib/components/templates/projects/projects.svelte';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();
@@ -12,7 +12,7 @@
 
 <Navbar {info} {projects} />
 
-<MainSection {info} />
+<MainSection />
 
 {#if projects?.length > 0}
 	<Projects {projects} />

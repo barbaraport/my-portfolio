@@ -1,9 +1,9 @@
-import type { PortfolioData } from '../apis/daos/PortfolioData';
+import type { PortfolioData } from '../apis/dtos/PortfolioData';
 import { FileGateway } from '../apis/gateways/FileGateway';
 import { DataService } from '../apis/services/DataService';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async (): Promise<PortfolioData> => {
 	const service = new DataService(new FileGateway());
 
 	return service

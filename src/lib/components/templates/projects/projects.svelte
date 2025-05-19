@@ -1,9 +1,10 @@
 <script lang="ts">
-	import type { ProjectsProps } from '$lib/sections/projects/ProjectsProps';
-	import Project from '$lib/components/project/project.svelte';
+	import SectionSubtitle from '$lib/components/atoms/sectionSubtitle/sectionSubtitle.svelte';
+	import SectionTitle from '$lib/components/atoms/sectionTitle/sectionTitle.svelte';
+	import Project from '$lib/components/molecules/project/project.svelte';
 	import { Sections } from '$lib/constants/sections';
-	import SectionTitle from '$lib/components/sectionTitle/sectionTitle.svelte';
-	import SectionSubtitle from '$lib/components/sectionSubtitle/sectionSubtitle.svelte';
+	import type { ProjectsProps } from './ProjectsProps';
+
 	const { projects }: ProjectsProps = $props();
 </script>
 

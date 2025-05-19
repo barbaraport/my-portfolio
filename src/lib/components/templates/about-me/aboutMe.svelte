@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { AboutMeSectionProps } from '$lib/sections/about-me/AboutMeProps';
-	import Experience from '$lib/components/experience/experience.svelte';
-	import Skill from '$lib/components/skill/skill.svelte';
+	import SectionSubtitle from '$lib/components/atoms/sectionSubtitle/sectionSubtitle.svelte';
+	import SectionTitle from '$lib/components/atoms/sectionTitle/sectionTitle.svelte';
+	import Skill from '$lib/components/atoms/skill/skill.svelte';
+	import Experience from '$lib/components/molecules/experience/experience.svelte';
 	import { Sections } from '$lib/constants/sections';
-	import SectionTitle from '$lib/components/sectionTitle/sectionTitle.svelte';
-	import SectionSubtitle from '$lib/components/sectionSubtitle/sectionSubtitle.svelte';
+	import type { AboutMeSectionProps } from './AboutMeProps';
 
 	const { info }: AboutMeSectionProps = $props();
 	const { name, description, skills, education, social, photo } = info;
@@ -37,7 +37,6 @@
 							<li>{paragraph}</li>
 						{/each}
 					</ul>
-
 					<div class="my-4">
 						<span class="text-xl">Top Skills</span>
 					</div>
@@ -47,14 +46,6 @@
 						{/each}
 					</div>
 				</div>
-				<!-- <div class="w-full">
-					<div class="mb-4"><span class="text-xl">Work</span></div>
-					<div class="flex flex-col gap-4">
-						{#each work as work}
-							<Experience experience={work} />
-						{/each}
-					</div>
-				</div> -->
 				<div class="w-full">
 					<div class="mb-4">
 						<span class="text-xl">Education</span>

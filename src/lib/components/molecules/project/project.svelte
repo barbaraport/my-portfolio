@@ -1,6 +1,6 @@
 <script lang="ts">
+	import Skill from '$lib/components/atoms/skill/skill.svelte';
 	import type { ProjectProps } from './ProjectProps';
-	import Skill from '../skill/skill.svelte';
 	const { name, description, image, skills }: ProjectProps = $props();
 </script>
 

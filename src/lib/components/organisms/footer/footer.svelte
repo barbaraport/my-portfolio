@@ -16,7 +16,7 @@
 					<a class="font-medium" href="https://svelte.dev/">Svelte</a>
 					<span>and </span>
 					<a class="font-medium" href="https://tailwindcss.com/">Tailwind CSS</a>
-					<span>{'<3'}</span>
+					<span>❤️</span>
 				</div>
 			</div>
 			<div class="col-start-1 flex items-center justify-center gap-6 md:col-start-3 md:justify-end">

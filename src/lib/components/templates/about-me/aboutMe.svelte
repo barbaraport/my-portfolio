@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { AboutMeSectionProps } from '$lib/sections/about-me/AboutMeProps';
-	import Experience from '$lib/components/experience/experience.svelte';
-	import Skill from '$lib/components/skill/skill.svelte';
+	import SectionSubtitle from '$lib/components/atoms/sectionSubtitle/sectionSubtitle.svelte';
+	import SectionTitle from '$lib/components/atoms/sectionTitle/sectionTitle.svelte';
+	import Skill from '$lib/components/atoms/skill/skill.svelte';
+	import Experience from '$lib/components/molecules/experience/experience.svelte';
 	import { Sections } from '$lib/constants/sections';
-	import SectionTitle from '$lib/components/sectionTitle/sectionTitle.svelte';
-	import SectionSubtitle from '$lib/components/sectionSubtitle/sectionSubtitle.svelte';
+	import type { AboutMeSectionProps } from './AboutMeProps';
 
 	const { info }: AboutMeSectionProps = $props();
 	const { name, description, skills, education, social, photo } = info;
@@ -22,22 +22,15 @@
 			</div>
 			<div class="flex w-full flex-col content-between gap-4 lg:flex-row">
 				<div class="flex w-full items-center justify-center">
-					<img
-						src={photo.url}
-						aria-hidden="true"
-						class="rounded-full"
-						width="256"
-						alt={photo.alt}
-					/>
+					<img src={photo.url} class="rounded-full" width="256" alt={photo.alt} />
 				</div>
 				<div class="w-full">
 					<div class="mb-4"><span class="text-xl">Overview</span></div>
-					<ul role="list" class="marker:--color-text ml-6 list-disc">
+					<ul class="ml-6 list-disc text-current">
 						{#each description as paragraph}
 							<li>{paragraph}</li>
 						{/each}
 					</ul>
-
 					<div class="my-4">
 						<span class="text-xl">Top Skills</span>
 					</div>
@@ -47,21 +40,13 @@
 						{/each}
 					</div>
 				</div>
-				<!-- <div class="w-full">
-					<div class="mb-4"><span class="text-xl">Work</span></div>
-					<div class="flex flex-col gap-4">
-						{#each work as work}
-							<Experience experience={work} />
-						{/each}
-					</div>
-				</div> -->
 				<div class="w-full">
 					<div class="mb-4">
 						<span class="text-xl">Education</span>
 					</div>
 					<div class="flex flex-col gap-4">
-						{#each education as education}
-							<Experience experience={education} />
+						{#each education as experience}
+							<Experience {experience} />
 						{/each}
 					</div>
 				</div>

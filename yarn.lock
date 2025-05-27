@@ -198,14 +198,7 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.25.4.tgz#0b17ec8a70b2385827d52314c1253160a0b9bacc"
   integrity sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ==
 
-"@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@eslint-community/eslint-utils/-/eslint-utils-4.4.1.tgz#d1145bf2c20132d6400495d6df4bf59362fd9d56"
-  integrity sha512-s3O3waFUrMV8P/XaF/+ZTp1X9XBZW1a4B97ZnjQF2KYWaFD2A8KyFBsrsfSjEmjn3RGWAIuvlneuZm3CUK3jbA==
-  dependencies:
-    eslint-visitor-keys "^3.4.3"
-
-"@eslint-community/eslint-utils@^4.7.0":
+"@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.6.1", "@eslint-community/eslint-utils@^4.7.0":
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/@eslint-community/eslint-utils/-/eslint-utils-4.7.0.tgz#607084630c6c033992a082de6e6fbc1a8b52175a"
   integrity sha512-dyybb3AcajC7uha6CvhdVRJqaKyn7w2YKqKyAN37NKYgZT36w+iRb0Dymmc5qEJ549c/S31cMMSFd75bteCpCw==
@@ -1354,33 +1347,26 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-compat-utils@^0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/eslint-compat-utils/-/eslint-compat-utils-0.6.4.tgz#173d305132da755ac3612cccab03e1b2e14235ed"
-  integrity sha512-/u+GQt8NMfXO8w17QendT4gvO5acfxQsAKirAt0LVxDnr2N8YLCVbregaNc/Yhp7NM128DwCaRvr8PLDfeNkQw==
-  dependencies:
-    semver "^7.5.4"
-
 eslint-config-prettier@^10.0.1:
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-10.0.2.tgz#47444de8aa104ce82c2f91ad2a5e96b62c01e20d"
   integrity sha512-1105/17ZIMjmCOJOPNfVdbXafLCLj3hPmkmB7dLgt7XsQ/zkxSuDerE/xgO3RxoHysR1N1whmquY0lSn2O0VLg==
 
-eslint-plugin-svelte@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte/-/eslint-plugin-svelte-3.0.2.tgz#2f9fe30eaff6adc874a73b8472353aaf14a348ea"
-  integrity sha512-+0QglmWNryvXXxRQKzLF3i+AreTsueCw7PBb0nGVBq+F9HoYqAjQeJ/9N6vFAtjMjK3wgsETrLVyBKPdeufN6Q==
+eslint-plugin-svelte@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte/-/eslint-plugin-svelte-3.9.0.tgz#864333351aad89c63e278226f886bd305c848e01"
+  integrity sha512-nvIUNyyPGbr5922Kd1p/jXe+FfNdVPXsxLyrrXpwfSbZZEFdAYva9O/gm2lObC/wXkQo/AUmQkAihfmNJYeCjA==
   dependencies:
-    "@eslint-community/eslint-utils" "^4.4.1"
+    "@eslint-community/eslint-utils" "^4.6.1"
     "@jridgewell/sourcemap-codec" "^1.5.0"
-    eslint-compat-utils "^0.6.4"
     esutils "^2.0.3"
-    known-css-properties "^0.35.0"
+    globals "^16.0.0"
+    known-css-properties "^0.36.0"
     postcss "^8.4.49"
     postcss-load-config "^3.1.4"
     postcss-safe-parser "^7.0.0"
     semver "^7.6.3"
-    svelte-eslint-parser "^1.0.0"
+    svelte-eslint-parser "^1.2.0"
 
 eslint-scope@^8.2.0:
   version "8.2.0"
@@ -1535,12 +1521,7 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fdir@^6.2.0:
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.3.tgz#011cdacf837eca9b811c89dbb902df714273db72"
-  integrity sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==
-
-fdir@^6.4.4:
+fdir@^6.2.0, fdir@^6.4.4:
   version "6.4.4"
   resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.4.tgz#1cfcf86f875a883e19a8fab53622cfe992e8d2f9"
   integrity sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==
@@ -1830,10 +1811,10 @@ kleur@^4.1.5:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.5.tgz#95106101795f7050c6c650f350c683febddb1780"
   integrity sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==
 
-known-css-properties@^0.35.0:
-  version "0.35.0"
-  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.35.0.tgz#f6f8e40ab4e5700fa32f5b2ef5218a56bc853bd6"
-  integrity sha512-a/RAk2BfKk+WFGhhOCAYqSiFLc34k8Mt/6NWRI4joER0EYUzXIcFivjjnoD3+XU1DggLn/tZc3DOAgke7l8a4A==
+known-css-properties@^0.36.0:
+  version "0.36.0"
+  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.36.0.tgz#5c4365f3c9549ca2e813d2e729e6c47ef6a6cb60"
+  integrity sha512-A+9jP+IUmuQsNdsLdcg6Yt7voiMF/D4K83ew0OpJtpu+l34ef7LaohWV0Rc6KNvzw6ZDizkqfyB5JznZnzuKQA==
 
 levn@^0.4.1:
   version "0.4.1"
@@ -2186,20 +2167,20 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-plugin-svelte@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-3.3.3.tgz#49d5c025a1516063ac7ef026806f880caa310424"
-  integrity sha512-yViK9zqQ+H2qZD1w/bH7W8i+bVfKrD8GIFjkFe4Thl6kCT9SlAsXVNmt3jCvQOCsnOhcvYgsoVlRV/Eu6x5nNw==
+prettier-plugin-svelte@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-3.4.0.tgz#ed0a860b22d39682c1db5c2a210b3db073b4f689"
+  integrity sha512-pn1ra/0mPObzqoIQn/vUTR3ZZI6UuZ0sHqMK5x2jMLGrs53h0sXhkVuDcrlssHwIMk7FYrMjHBPoUSyyEEDlBQ==
 
 prettier-plugin-tailwindcss@^0.6.11:
   version "0.6.11"
   resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.11.tgz#cfacd60c4f81997353ee913e589037f796df0f5f"
   integrity sha512-YxaYSIvZPAqhrrEpRtonnrXdghZg1irNg4qrjboCXrpybLWVs55cW2N3juhspVJiO0JBvYJT8SYsJpc8OQSnsA==
 
-prettier@^3.4.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.2.tgz#d066c6053200da0234bf8fa1ef45168abed8b914"
-  integrity sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==
+prettier@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.3.tgz#4fc2ce0d657e7a02e602549f053b239cb7dfe1b5"
+  integrity sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==
 
 pretty-format@^27.0.2:
   version "27.5.1"
@@ -2341,7 +2322,7 @@ saxes@^6.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-semver@^7.5.3, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3:
+semver@^7.5.3, semver@^7.6.0, semver@^7.6.3:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
@@ -2464,10 +2445,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-check@^4.0.0:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-4.1.4.tgz#59ec6f08d23647ec508ff01584ef6d191c77c9e1"
-  integrity sha512-v0j7yLbT29MezzaQJPEDwksybTE2Ups9rUxEXy92T06TiA0cbqcO8wAOwNUVkFW6B0hsYHA+oAX3BS8b/2oHtw==
+svelte-check@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-4.2.1.tgz#d332582f24b40967f3c56b8e2d74c306044cecdf"
+  integrity sha512-e49SU1RStvQhoipkQ/aonDhHnG3qxHSBtNfBRb9pxVXoa+N7qybAo32KgA9wEb2PCYFNaDg7bZCdhLD1vHpdYA==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     chokidar "^4.0.1"
@@ -2475,10 +2456,10 @@ svelte-check@^4.0.0:
     picocolors "^1.0.0"
     sade "^1.7.4"
 
-svelte-eslint-parser@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/svelte-eslint-parser/-/svelte-eslint-parser-1.0.0.tgz#186187e056be9870c8c76b40242c61e9efde94f9"
-  integrity sha512-diZzpeeFhAxormeIhmRS4vXx98GG6T7Dq5y1a6qffqs/5MBrBqqDg8bj88iEohp6bvhU4MIABJmOTa0gXWcbSQ==
+svelte-eslint-parser@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/svelte-eslint-parser/-/svelte-eslint-parser-1.2.0.tgz#24054d37d8db4eaed6e6874e574c54a668c4bc49"
+  integrity sha512-mbPtajIeuiyU80BEyGvwAktBeTX7KCr5/0l+uRGLq1dafwRNrjfM5kHGJScEBlPG3ipu6dJqfW/k0/fujvIEVw==
   dependencies:
     eslint-scope "^8.2.0"
     eslint-visitor-keys "^4.0.0"

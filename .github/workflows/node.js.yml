@@ -34,6 +34,9 @@ jobs:
       - name: Run Vitest tests
         run: yarn test:unit -- --run
 
+      - name: Builds the project
+        run: yarn run build
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
@@ -46,6 +49,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-
-      - name: Builds the project
-        run: yarn run build

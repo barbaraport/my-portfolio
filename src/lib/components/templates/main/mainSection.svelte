@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { NavBarHeight } from '$lib/constants/components';
+	const testId = 'main';
 </script>
 
 <div
 	style={`height: calc(100vh - ${NavBarHeight})`}
 	class="bg bg-cover bg-center bg-no-repeat px-4"
+	data-testid={`${testId}`}
 >
 	<div class="flex h-full flex-col items-center justify-center">
 		<div class="center flex h-1/2 flex-col items-center justify-end gap-2.5 text-center">
@@ -12,10 +14,11 @@
 				>Looking for an expert software developer? Let's work together to find your solution.</span
 			>
 			<span
+				data-testid={`${testId}-impact-phrase`}
 				class="font-medium max-[644px]:text-lg sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
 				>Building the future, one line of code at a time.</span
 			>
-			<span class="text-xs"
+			<span class="text-xs" data-testid={`${testId}-photo-by`}
 				>Photo by <a
 					href="https://unsplash.com/@mitchel3uo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 					>Mitchell Luo</a

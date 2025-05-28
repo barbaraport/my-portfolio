@@ -8,9 +8,10 @@
 
 	const { info }: AboutMeSectionProps = $props();
 	const { name, description, skills, education, social, photo } = info;
+	const testId = 'about-me';
 </script>
 
-<div id={Sections.ABOUT_ME}>
+<div id={Sections.ABOUT_ME} data-testid={`${testId}`}>
 	<div class="flex flex-col items-center justify-center gap-3">
 		<div class="mx-6 flex flex-col gap-6 py-3">
 			<div class="flex flex-col items-center justify-center gap-3">

@@ -9,3 +9,10 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+      day: 'saturday'
+      time: '11:00'
+    open-pull-requests-limit: 1
+    groups:
+      all-dependencies:
+        patterns:
+          - '*'
